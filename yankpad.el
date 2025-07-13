@@ -1,7 +1,7 @@
 ;;; yankpad.el --- Paste snippets from an org-mode file         -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2016--present Erik Sjöstrand
-;; MIT License, except company-yankpad and company-yankpad--name-or-key (GPL 3)
+;; MIT License
 
 ;; Author: Erik Sjöstrand
 ;; URL: http://github.com/Kungsgeten/yankpad
@@ -50,8 +50,9 @@
 ;; `yankpad-expand-separator' (a colon by default).  If you need to change the
 ;; category, use `yankpad-set-category'.  If you want to append snippets from
 ;; another category (basically having several categories active at the same
-;; time), use `yankpad-append-category'.  If you have company-mode enabled,
-;; you can also use `company-yankpad`.
+;; time), use `yankpad-append-category'.  You can also add `yankpad-capf` to
+;; `completion-at-point-functions` in order to use company, corfu, or
+;; completion-preview to select snippets.
 ;;
 ;; A quick way to add short snippets with a keyword is to add a descriptive list
 ;; to the category in your `yankpad-file'.  The key of each item in the list will be
